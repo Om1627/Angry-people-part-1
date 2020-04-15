@@ -81,7 +81,7 @@ function draw(){
 }
 
 function mouseDragged(){
-    if (gameState!=="launched"){
+    if (gameState!=="launched"&&mouseX<220&& mouseY<220){
         Matter.Body.setPosition(bird.body, {x: mouseX , y: mouseY});
     }
 }
